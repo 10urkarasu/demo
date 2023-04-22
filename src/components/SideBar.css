@@ -1,0 +1,156 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Raleway:wght@100&display=swap');
+
+nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0px 0px 30px 30px;
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0px;
+    transition: 0.5s;
+    overflow: initial;
+    
+}
+
+
+
+.navbar {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding-inline-start: 0;
+}
+
+.navbar li{
+    list-style: none;
+    padding: 0px 20px;
+    position: relative;
+    align-items: 0;
+    transition: 10s ease-in-out 100ms;
+}
+
+.navbar li a{
+    text-align: center;
+    text-decoration: none;
+    font-size:1rem;
+    font-weight: 300;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+hr.rounded {
+    display: block;
+  height: 3px;
+  border: 0;
+    width: 50%;
+    margin: 5px 0px 0px 0px;
+    background-color:rgba(255, 255, 255, 0.75);
+    border-radius: 30px 30px 30px 30px;
+  }
+
+.navbar li:hover >a{
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar li:hover > hr.rounded{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    height: 3px;
+}
+
+.nav__toggler div{
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    border-radius: 30px;
+    background:rgba(255, 255, 255, 0.75);
+    transition: 0.4s ease-in;
+    
+}
+
+.nav__toggler{
+   cursor: pointer;
+   display: none;
+}
+
+@media (max-width: 67.5em) {
+    nav{
+        display: grid;
+        height: 125px;
+    }
+    #logo{
+        display: grid;
+        margin: auto;
+        width: 50%;
+    }
+    
+    #logo-5{
+        display: grid;
+        margin: auto ;
+        padding-top: 20px;
+        width: 50%;
+    }
+      
+  }
+
+  @media (max-width: 45em) {
+    nav{
+        display: flex;
+        height: 75px;
+        justify-content: space-between;
+    }
+    #logo{
+        display: flex;
+        margin: 0;
+        width: 100%;
+    }
+    
+    #logo-5{
+        display: flex;
+        margin: 0 ;
+        padding-top: 0px;
+        width: 100%;
+    }
+    .nav__toggler{
+        display: block;
+     }
+
+     .navbar{
+        justify-content: flex-start;
+        position: fixed;
+        top: 100px;
+        right: 0;
+        width: 100%;
+        height: 93vh;
+        flex-direction: column;
+        transform: translateX(-100%);
+        transition: 0.5s ease-in-out;
+     }
+  }
+
+.nav__active {
+    transform: translateX(0);
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-8px,5px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-8px,-5px);
+}

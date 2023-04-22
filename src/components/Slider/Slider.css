@@ -1,0 +1,73 @@
+.mySwiper{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 95%;
+    transition: 0.5s all
+}
+
+.mySwiper img{
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 30px;
+}
+
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    display: block;
+    z-index: 2;
+}
+
+
+.background-video {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    filter:contrast(50%);
+  }
+
+.container .mySwiper{
+    width: 50vw;
+    position:absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) translateY(50%);
+    z-index: 1;
+}
+
+@media (max-width: 67.5em) {
+    .mySwiper{
+        height: 80%;
+    }
+    .container .mySwiper{
+        width: 75%;
+    }
+      
+  }
+
+  @media (max-width: 45em) {
+    .mySwiper{
+        height: 65%;
+    }
+    .container .mySwiper{
+        width: 90%;
+    }
+  }
+
+  .test{
+    width: auto;
+    color: black;
+    background-color: black;
+    height: 2000px;
+  }
